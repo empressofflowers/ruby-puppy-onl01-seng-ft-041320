@@ -9,14 +9,17 @@ class Dog
     save
   end
 
+  private
   def self.all
     @@all
   end
 
+  private
   def self.clear_all
     @@all = []
   end
-
+  
+  private
   def self.print_all
     @@all.each do |dog|
       puts dog.name
